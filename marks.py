@@ -32,7 +32,7 @@ print("TRAINED MODEL:")
 pred_y = regression.predict(val_X)
 prediction = pd.DataFrame({'Hours': [i[0] for i in val_X], 'Predicted Marks': [k for k in pred_y]})
 prediction
-compare_scores = pd.DataFrame({'Actual Marks': val_y, 'Predicted Marks': pred_y})
+compare_scores = pd.DataFrame({'Actual Marks': val_y, 'Predicted Markss': pred_y})
 compare_scores
 plt.scatter(x=val_X, y=val_y, color='Red')
 plt.plot(val_X, pred_y, color='Black')
