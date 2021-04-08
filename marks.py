@@ -20,6 +20,7 @@ plt.ylabel('Marks Percentage', size=12)
 plt.xlabel('Hours Studied', size=12)
 plt.show()
 print(data.corr())
+
 # Defining X and y from the Data
 X = data.iloc[:, :-1].values  
 y = data.iloc[:, 1].values
@@ -40,6 +41,7 @@ plt.title('Actual vs Predicted', size=20)
 plt.ylabel('Marks Percentage', size=12)
 plt.xlabel('Hours Studied', size=12)
 plt.show()
+
 # Calculating the accuracy of the model
 print('Mean absolute error: ',mean_absolute_error(val_y,pred_y))
 print('Mean Squared error: ',mean_squared_error(val_y,pred_y))
