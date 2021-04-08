@@ -1,3 +1,4 @@
+In [51]:
 import pandas as pd
 import matplotlib.pyplot as plt 
 import seaborn as sns
@@ -7,6 +8,7 @@ from sklearn.metrics import mean_absolute_error
 from sklearn.metrics import mean_squared_error
 
 # Reading the Data 
+In [52]:
 data = pd.read_csv('http://bit.ly/w-data')
 print(data)
 sns.scatterplot(y= data['Scores'], x= data['Hours'])
