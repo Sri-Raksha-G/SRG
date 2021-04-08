@@ -1,13 +1,16 @@
 #importibg the libraries
-```import pandas as pd
+```
+import pandas as pd
 import matplotlib.pyplot as plt 
 import seaborn as sns
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_absolute_error
-from sklearn.metrics import mean_squared_error```
+from sklearn.metrics import mean_squared_error
 
-# Reading the Data 
+```
+
+# Reading the Data.
 data = pd.read_csv('http://bit.ly/w-data')
 print(data)
 sns.scatterplot(y= data['Scores'], x= data['Hours'])
@@ -48,4 +51,4 @@ print('Mean absolute error: ',mean_absolute_error(val_y,pred_y))
 print('Mean Squared error: ',mean_squared_error(val_y,pred_y))
 hours = [9.25]
 answer = regression.predict([hours])
-print("Score = {}".format(round(answer[0],3)))
+print("Score = {}".format(round(answer[0],3))
