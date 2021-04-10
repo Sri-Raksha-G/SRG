@@ -6,7 +6,7 @@
 This is a Supervised learning simple linear regression task as it involves just 2 variables that is used to predict the percentage of an student based on the no. of study hours.
 
 ```
-#importing the libraries
+# importing the libraries
 import pandas as pd
 import matplotlib.pyplot as plt 
 import seaborn as sns
@@ -52,3 +52,17 @@ print(data)
   6.9  |   76
   7.8  |   86
 
+
+# DATA VISUALIZATION
+####
+```
+sns.scatterplot(y= data['Scores'], x= data['Hours'])
+plt.title('Marks Vs Study Hours',size=20)
+plt.ylabel('Marks Percentage', size=12)
+plt.xlabel('Hours Studied', size=12)
+plt.show()
+sns.regplot(x= data['Hours'], y= data['Scores'])
+plt.title('Regression Plot',size=20)
+plt.ylabel('Marks Percentage', size=12)
+plt.xlabel('Hours Studied', size=12)
+plt.show()
