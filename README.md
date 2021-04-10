@@ -22,14 +22,14 @@ from sklearn.metrics import mean_squared_error
 data = pd.read_csv('http://bit.ly/w-data')
 print(data)
 
-```
 
 
-    |Hours | Scores
-    |------|--------
-    | 2.5  |   21
-    | 5.1  |   47
-    | 3.2  |   27
+
+     Hours | Scores
+     ------|--------
+      2.5  |   21
+      5.1  |   47
+      3.2  |   27
       8.5  |   75
       3.5  |   30
       1.5  |   20
