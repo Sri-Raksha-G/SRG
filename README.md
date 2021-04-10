@@ -123,8 +123,6 @@ print(df)
 
 
 ![alt text](https://github.com/Sri-Raksha-G/SRG/blob/main/fig3.jpg)
-# Model Evaluation
-###
 
 Actual Marks | Predicted Marks
 ---|---
@@ -135,6 +133,9 @@ Actual Marks | Predicted Marks
 62  |60.588106
 35  |39.710582
 24  |20.821393
+
+# Model Evaluation
+###
 
 
 ```
