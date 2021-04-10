@@ -62,13 +62,22 @@ plt.title('Marks Vs Study Hours',size=20)
 plt.ylabel('Marks Percentage', size=12)
 plt.xlabel('Hours Studied', size=12)
 plt.show()
+
+```
+# Linear Regression Model
+###
+```
+
 sns.regplot(x= data['Hours'], y= data['Scores'])
 plt.title('Regression Plot',size=20)
 plt.ylabel('Marks Percentage', size=12)
 plt.xlabel('Hours Studied', size=12)
 plt.show()
 print(data.corr())
+
 ```
+# Training the model
+### 1) Splitting the Data
 
 ```
 
@@ -76,18 +85,28 @@ print(data.corr())
 X = data.iloc[:, :-1].values  
 y = data.iloc[:, 1].values
 
-```
-
-```
-
 # Spliting the Data in two
 train_X, val_X, train_y, val_y = train_test_split(X, y, random_state = 0)
+
+```
+### 2) Fitting the data into the model
+```
 regression = LinearRegression()
 regression.fit(train_X, train_y)
 print("TRAINED MODEL:")
+
+```
+# Predicting the Percentage of Marks
+###
+
 pred_y = regression.predict(val_X)
 prediction = pd.DataFrame({'Hours': [i[0] for i in val_X], 'Predicted Marks': [k for k in pred_y]})
 prediction
+
+```
+```
+# Comparing the Scores
+###
 compare_scores = pd.DataFrame({'Actual Marks': val_y, 'Predicted Marks': pred_y})
 compare_scores
 plt.scatter(x=val_X, y=val_y, color='Red')
@@ -100,6 +119,8 @@ plt.show()
 ```
 
 ```
+# Model Evaluation
+###
 
 # Calculating the accuracy of the model
 print('Mean absolute error: ',mean_absolute_error(val_y,pred_y))
