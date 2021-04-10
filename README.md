@@ -64,6 +64,7 @@ plt.xlabel('Hours Studied', size=12)
 plt.show()
 
 ```
+
 # Linear Regression Model
 ###
 ```
