@@ -131,3 +131,12 @@ answer = regression.predict([hours])
 print("Score = {}".format(round(answer[0],3)))
 
 ```
+# Output
+###
+```
+TRAINED MODEL:
+Mean absolute error:  4.130879918502486
+Mean Squared error:  20.33292367497997
+Score = 93.893
+
+```
