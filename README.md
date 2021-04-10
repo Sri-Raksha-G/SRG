@@ -98,15 +98,16 @@ print("TRAINED MODEL:")
 ```
 # Predicting the Percentage of Marks
 ###
-
+```
 pred_y = regression.predict(val_X)
 prediction = pd.DataFrame({'Hours': [i[0] for i in val_X], 'Predicted Marks': [k for k in pred_y]})
 prediction
 
 ```
-```
 # Comparing the Scores
 ###
+```
+
 compare_scores = pd.DataFrame({'Actual Marks': val_y, 'Predicted Marks': pred_y})
 compare_scores
 plt.scatter(x=val_X, y=val_y, color='Red')
@@ -117,10 +118,10 @@ plt.xlabel('Hours Studied', size=12)
 plt.show()
 
 ```
-
-```
 # Model Evaluation
 ###
+
+```
 
 # Calculating the accuracy of the model
 print('Mean absolute error: ',mean_absolute_error(val_y,pred_y))
