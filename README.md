@@ -54,7 +54,7 @@ print(data)
   7.8  |   86
 
 
-# DATA VISUALIZATION
+# Data Visualization
 ###
 ```
 sns.scatterplot(y= data['Scores'], x= data['Hours'])
