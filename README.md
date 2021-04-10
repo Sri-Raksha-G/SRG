@@ -121,7 +121,12 @@ print(df)
 
 ```
 
-Actual | Predicted
+
+![alt text](https://github.com/Sri-Raksha-G/SRG/blob/main/fig3.jpg)
+# Model Evaluation
+###
+
+Actual Marks | Predicted Marks
 ---|---
 20 | 16.844722
 27  |33.745575
@@ -131,9 +136,6 @@ Actual | Predicted
 35  |39.710582
 24  |20.821393
 
-![alt text](https://github.com/Sri-Raksha-G/SRG/blob/main/fig3.jpg)
-# Model Evaluation
-###
 
 ```
 # Calculating the accuracy of the model
