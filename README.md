@@ -77,6 +77,7 @@ plt.show()
 print(data.corr())
 
 ```
+![alt text](https://github.com/Sri-Raksha-G/SRG/blob/main/fig2.jpg)
 # Training the model
 ### 1) Splitting the Data
 
@@ -117,6 +118,7 @@ plt.xlabel('Hours Studied', size=12)
 plt.show()
 
 ```
+![alt text](https://github.com/Sri-Raksha-G/SRG/blob/main/fig3.jpg)
 # Model Evaluation
 ###
 
