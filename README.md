@@ -24,6 +24,7 @@ print(data)
 
 ```
 
+
     |Hours | Scores
     |------|--------
     | 2.5  |   21
