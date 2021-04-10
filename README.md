@@ -64,6 +64,7 @@ plt.xlabel('Hours Studied', size=12)
 plt.show()
 
 ```
+![alt text](https://github.com/Sri-Raksha-G/SRG/blob/main/fig1.jpg)
 
 # Linear Regression Model
 ###
