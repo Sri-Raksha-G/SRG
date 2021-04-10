@@ -116,8 +116,21 @@ plt.title('Actual vs Predicted', size=20)
 plt.ylabel('Marks Percentage', size=12)
 plt.xlabel('Hours Studied', size=12)
 plt.show()
+df=pd.DataFrame({'Actual':val_y,'Predicted':pred_y})
+print(df)
 
 ```
+
+Actual | Predicted
+---|---
+20 | 16.844722
+27  |33.745575
+69  |75.500624
+30  |26.786400
+62  |60.588106
+35  |39.710582
+24  |20.821393
+
 ![alt text](https://github.com/Sri-Raksha-G/SRG/blob/main/fig3.jpg)
 # Model Evaluation
 ###
